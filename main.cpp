@@ -84,7 +84,7 @@ void printReport() {
     if(res != CURLE_OK) {
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
               curl_easy_strerror(res));
-              QCoreApplication::exit(1);
+              //QCoreApplication::exit(1);
     }
 
 
@@ -120,10 +120,10 @@ void printReport() {
         painter.setFont(font);
         const QRect rectangle = QRect(0, 0, 250, 600);
         QRect boundingRect;
-        if(printer.printerState() == 0) {
+        //if(printer.printerState() == 0) {
            painter.drawText(rectangle, Qt::TextWordWrap, weather, &boundingRect);
            painter.end();
-        }
+        //}
     }
 
     free(chunk.memory);
