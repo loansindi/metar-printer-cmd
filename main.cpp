@@ -157,8 +157,7 @@ int main(int argc, char *argv[])
     parser.process(a);
 
     city = parser.positionalArguments()[0];
-    printReport();
-    exit(0);
+    //printReport();
     //QCoreApplication::exit()
     return a.exec();
 }
