@@ -116,7 +116,7 @@ void printReport() {
         painter.begin(&printer);
 
         QFont font = painter.font();
-        //font.setPixelSize(ui->fontSize->text().toInt());
+        font.setPixelSize(12);
         painter.setFont(font);
         const QRect rectangle = QRect(0, 0, 250, 600);
         QRect boundingRect;
