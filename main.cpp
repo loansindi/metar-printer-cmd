@@ -121,7 +121,7 @@ void printReport(int position) {
         return;
     }
     */
-    getReport(cities[position]);
+    QString weather = getReport(cities[position]);
 
 #ifdef Q_PROCESSOR_ARM
 
