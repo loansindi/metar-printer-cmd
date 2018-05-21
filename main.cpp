@@ -142,7 +142,7 @@ void printReport(int position) {
 #endif
 }
 
-static void button() {
+static void button1() {
     printReport(0);
 }
 
@@ -152,7 +152,7 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 #ifdef Q_PROCESSOR_ARM
     wiringPiSetup();
-    wiringPiISR(9, INT_EDGE_FALLING, &button);
+    wiringPiISR(9, INT_EDGE_FALLING, &button1);
     pinMode(9, INPUT);
     pullUpDnControl(9, PUD_UP);
 #endif
